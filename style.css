@@ -1,141 +1,83 @@
-html{
+html {
     box-sizing: border-box;
     height: 100%;
 }
-*,
-*::before,
-*::after{
+
+*, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     align-items: center;
     background-color: #f4ffff;
     display: flex;
     font-family: "Dosis", sans-serif;
-    font-display: swap;
-    height: inherit;
+    height: 100%;
     justify-content: center;
 }
-.wrapper{
+
+.wrapper {
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(8, 7, 7, 0.18);
-    color: #1a1a1a;
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     background: rgba(234, 213, 213, 0.5);
     border: 1px solid rgba(201, 166, 166, 0.18);
     flex-basis: 400px;
     height: 540px;
     padding: 20px 30px;
 }
-.screen{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background:rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(2, 2, 2, 0.18);
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(8, 7, 7, 0.18);
-    color: #000000;
-    overflow: auto;
-    padding: 10px 20px 20px 10px;
-    text-align: right;
-    height: 120px;
-    width: 300px;
-}
-.display{
+
+.display {
     font-size: 40px;
     height: 80px;
     text-align: right;
     width: 100%;
+    margin-bottom: 20px;
 }
-.preview{
-    font-size: 15px;
-    text-align: right;
-}
-.button-row{
+
+.button-row {
     display: flex;
     justify-content: space-between;
     margin: 5% 0;
 }
-.number{
+
+button {
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(92, 90, 90, 0.01);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(8, 7, 7, 0.18);
-    color: #000000;
-    flex-basis: 20%;
     font-family: inherit;
     font-size: 27px;
     height: 65px;
+    flex-basis: 20%;
+    cursor: pointer;
 }
-.operator, .delete{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(92, 90, 90, 0.01);
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(8, 7, 7, 0.18);
+
+.operator {
     color: #0084ff;
-    flex-basis: 20%;
-    font-family: inherit;
-    font-size: 27px;
-    height: 65px;
 }
-.clear{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(92, 90, 90, 0.01);
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(8, 7, 7, 0.18);
+
+.delete {
     color: #f84444;
-    flex-basis: 20%;
-    font-family: inherit;
-    font-size: 27px;
-    height: 65px;
-    grid-column: 1/3;
-    grid-row: 4/5;
 }
-.equal{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
+
+.clear {
+    color: #f84444;
+}
+
+.equal {
     background: rgba(140, 229, 254, 0.5);
-    border: 1px solid rgba(92, 90, 90, 0.01);
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(8, 7, 7, 0.18);
-    color: #000000;
-    flex-basis: 20%;
-    font-family: inherit;
-    font-size: 27px;
-    height: 65px;
-    grid-column: 4/5;
-    grid-row: 4/5;
+}
 
-}
-.number:hover,.operator:hover, .delete:hover{
+button:hover {
     background: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
 }
-.equal:hover{
-    background: rgba(140, 229, 254, 0.8);
-    cursor: pointer;
-}
-.clear:hover{
-    background: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
-.number:active,.operator:active, .clear:active, .delete:active{
+
+button:active {
     background: rgba(92, 90, 90, 0.8);
-    cursor: pointer;
 }
-.equal:active{
-    background: rgba(92, 150, 166, 0.8);
-    cursor: pointer;
-}
-
